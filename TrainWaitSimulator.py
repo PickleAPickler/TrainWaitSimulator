@@ -34,6 +34,18 @@ Ideas:
 
 """
 
+from datetime import datetime
+
+import time
+import random
+
+# right_now = datetime.today().minute
+# print('The time is' + right_now)
+
+# Experiment with    time: can we get the programme to wait? 
+wait_time = random.randint(1, 5)
+time.sleep(wait_time)
+
 print('Welcome to the train wait simulator!')
 print('These are the trains and when they arrive: \n' \
 'Nottingham | 1 min \n' \
@@ -61,4 +73,7 @@ while True:
 
     if user_input == 'Sandhurst':
         print('Have a nice time in Sandhurst!')
+
+
+
 
