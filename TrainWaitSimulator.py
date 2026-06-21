@@ -26,7 +26,7 @@ Keep it simple. Just have a list of trains + their times
 You choose a train, you wait X seconds, you're given the option:
  Ready to board y/n?
  Y = you have borded the train!
- N = choose another train or press 'X' to leave the stationx
+ N = choose another train or press 'X' to leave the station
 
 Ideas:
 
