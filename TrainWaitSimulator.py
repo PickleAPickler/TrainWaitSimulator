@@ -34,45 +34,81 @@ Ideas:
 
 """
 
-from datetime import datetime
+# from datetime import datetime
 
-import time
-import random
+# import time
+# import random
 
-# right_now = datetime.today().minute
-# print('The time is' + right_now)
+# # right_now = datetime.today().minute
+# # print('The time is' + right_now)
 
-# Experiment with    time: can we get the programme to wait? 
-wait_time = random.randint(1, 5)
-time.sleep(wait_time)
+# # Experiment with    time: can we get the programme to wait? 
+# wait_time = random.randint(1, 5)
+# time.sleep(wait_time)
 
-print('Welcome to the train wait simulator!')
-print('These are the trains and when they arrive: \n' \
-'Nottingham | 1 min \n' \
-'London | 30 secs \n' \
-'Sandhurst | 10 secs')
+# print('Welcome to the train wait simulator!')
+# print('These are the trains and when they arrive: \n' \
+# 'Nottingham | 1 min \n' \
+# 'London | 30 secs \n' \
+# 'Sandhurst | 10 secs')
 
-Trains = ['Nottingham', 'London', 'Sandhurst']
+# Trains = ['Nottingham', 'London', 'Sandhurst']
 
 
-while True:
-    user_input = (input('Choose which train you want to wait for: ')) 
-    if user_input == "q":
-        break
+# while True:
+#     user_input = (input('Choose which train you want to wait for: ')) 
+#     if user_input == "q":
+#         break
 
-    if user_input not in Trains:
-        continue
+#     if user_input not in Trains:
+#         continue
 
-    """Output messages:"""
+#     """Output messages:"""
     
-    if user_input == 'Nottingham':
-        print('Have a nice time in Nottingham!')
+#     if user_input == 'Nottingham':
+#         print('Have a nice time in Nottingham!')
 
-    if user_input == 'London':
-        print('Have a nice time in London!')
+#     if user_input == 'London':
+#         print('Have a nice time in London!')
 
-    if user_input == 'Sandhurst':
-        print('Have a nice time in Sandhurst!')
+#     if user_input == 'Sandhurst':
+#         print('Have a nice time in Sandhurst!')
+
+################################ Class Homework ###########################################
+
+"""
+We are making objects. Ideas:
+
+Buses, Trains, Alan, Guitars, Jiu-Jitsu Moves, Band members, skateboard tricks, Food. 
+ Bloody anything mate! :)
+
+
+"""
+
+class Dog:
+
+    species = "Canis familiaris" # this is a class  attribute - they keep the same for every instance
+
+    def __init__(self, name, age):  # these are instance attributes - they vary from one instance to another
+        self.name = name
+        self.age = age    
+
+my_dog = Dog('Milo', 8)
+
+print(my_dog.name)
+
+
+# def roll_over(self):
+#     print(f'{self.name} loves to roll over')
+
+
+
+
+
+
+
+
+
 
 
 
